@@ -28,13 +28,7 @@ class MyDocument extends Document {
         <body className="min-h-screen w-full text-base text-clr-neutral-200 font-sans bg-clr-neutral-400 px-4 py-4 md:px-8">
           <Main />
           <NextScript />
-          <div
-            id="modal"
-            role="dialog"
-            aria-hidden="true"
-            aria-labelledby="modalTitle"
-            aria-describedby="modalDescription"
-          ></div>
+          <div id="modal" aria-label="Delete Comment" role="dialog" aria-hidden="true"></div>
         </body>
       </Html>
     );
