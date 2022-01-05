@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/avatarfreak/frontend-interactive-comments](https://github.com/avatarfreak/frontend-interactive-comments)
-- Live Site URL: [https://avatarfreak.github.com/frontend-interactive-comments](https://avatarfreak.github.com/frontend-interactive-comments)
+- Solution URL: [https://github.com/avatarfreak/interactive-comments-section](https://github.com/avatarfreak/interactive-comments-section)
+- Live Site URL: [https://avatarfreak.github.io/interactive-comments-section/](https://avatarfreak.github.io/interactive-comments-section/)
 
 ## My process
 
