@@ -9,8 +9,11 @@ import useLocalStorage from "../components/hooks/useLocalStorage";
 export type CommentType = typeof dataJSON.comments[number];
 
 const Home = ({ data }) => {
-  const [comments, updateComment, createComment, deleteComment, addComment] =
-    useLocalStorage("comment", data.currentUser.username, data.comments);
+  const [comments, updateComment, createComment, deleteComment, addComment] = useLocalStorage(
+    "comment",
+    data.currentUser.username,
+    data.comments
+  );
   const [parentId, setParentId] = React.useState<number>(0);
   const [isAction, setIsAction] = React.useState({
     type: "edit",
