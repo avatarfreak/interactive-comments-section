@@ -23,7 +23,7 @@ const Comment: React.FC<IComment> = ({
 }) => {
   return (
     <>
-      <div className="grid grid-cols-3 rounded-lg my-4 p-4 bg-clr-neutral-100 md:grid-cols-card">
+      <div className="grid grid-cols-3 rounded-lg my-4 p-4 bg-clr-neutral-100 md:grid-cols-card md:p-8">
         <HeaderComment currentUser={currentUser} user={user} duration={createdAt} />
         <MainComments
           parentId={parentId}
