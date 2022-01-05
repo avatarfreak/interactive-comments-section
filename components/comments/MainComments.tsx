@@ -24,22 +24,26 @@ const MainComments: React.FC<IMainComments> = ({
   };
 
   return (
-    <div className="relative col-start-1 col-end-5 row-start-2 row-end-3 py-4 md:py-12 md:col-start-2 md:col-end-5 md:px-2">
+    <div className="col-start-1 col-end-5 row-start-2 row-end-3 py-4 md:py-12 md:col-start-2 md:col-end-5 md:px-2">
       {isActive && isAction.type == "edit" ? (
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="editForm" className="sr-only">
-            Edit Comment
-          </label>
+        <form onSubmit={handleSubmit} className="relative">
           <textarea
+            id="text-area"
             value={text}
             rows={5}
             cols={50}
             onChange={(e) => setText(e.target.value)}
-            className="w-full resize-none rounded-lg p-3 border  outline-none focus:ring-1 ring-clr-pri-100 md:cursor-pointer md:col-start-2 md:col-end-5 md:hover:border-clr-pri-300"
+            className="peer w-full resize-none rounded-lg p-3 border  outline-none focus:ring-1 ring-clr-pri-100 md:cursor-pointer md:col-start-2 md:col-end-5 md:hover:border-clr-pri-300"
           />
+          <label
+            htmlFor="text-area"
+            className="peer cursor-text absolute -top-2 left-6 md:left-12 text-sm text-gray-400 bg-clr-neutral-100 italic"
+          >
+            Edit Comment
+          </label>
           <button
             disabled={isDisabled}
-            className="absolute right-0 -bottom-9  p-2 bg-clr-pri-100 rounded-lg text-clr-neutral-100 font-bold uppercase drop-shadow-md disabled:opacity-50 disabled:cursor-not-allowed md:-bottom-1 md:py-3 md:hover:bg-clr-pri-300"
+            className="float-right p-2 bg-clr-pri-100 rounded-lg text-clr-neutral-100 font-bold uppercase drop-shadow-md focus:outline-none focus:ring focus:ring-offset-2 focus:ring-clr-pri-100 focus:ring-opacity-75 disabled:opacity-50 disabled:cursor-not-allowed md:-bottom-1 md:py-3 md:hover:bg-clr-pri-300"
           >
             update
           </button>
