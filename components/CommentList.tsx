@@ -22,7 +22,7 @@ const CommentList: React.FC<ICommentList> = ({
       {replies.map((comment) => {
         return (
           <div key={comment.id}>
-            <div className="grid grid-cols-3 rounded-lg my-4 p-4 bg-clr-neutral-100 md:grid-cols-card">
+            <div className="grid grid-cols-3 rounded-lg my-4 p-4 bg-clr-neutral-100 md:grid-cols-card md:p-8">
               <HeaderComment
                 user={comment.user.username}
                 duration={comment.createdAt}
@@ -62,7 +62,7 @@ const CommentList: React.FC<ICommentList> = ({
                     <CommentForm
                       label="reply"
                       content={`@${comment.user.username}`}
-                      placeholder="Add a comment..."
+                      placeholder="your reply"
                       user={currentUser}
                       handleSubmit={(text) =>
                         addComment(parent_commentId, comment.user.username, text)
