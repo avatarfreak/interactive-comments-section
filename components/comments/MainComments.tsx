@@ -24,7 +24,7 @@ const MainComments: React.FC<IMainComments> = ({
   };
 
   return (
-    <div className="col-start-1 col-end-5 row-start-2 row-end-3 py-4 md:py-12 md:col-start-2 md:col-end-5 md:px-2">
+    <div className="col-start-1 col-end-5 row-start-2 row-end-3 py-4 md:py-6 md:col-start-2 md:col-end-5 md:px-2">
       {isActive && isAction.type == "edit" ? (
         <form onSubmit={handleSubmit} className="relative">
           <textarea
