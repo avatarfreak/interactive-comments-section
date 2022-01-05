@@ -36,10 +36,10 @@ const DeleteModal: React.FC<IDeleteModal> = ({
         >
           <div className=" fixed inset-0 z-30 mx-2">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-neutral-100 max-w-[25rem] w-full space-y-4  p-9 rounded-lg">
-              <h2 id="modalTitle" className="font-bold text-lg text-clr-neutral-500 tracking-wider">
+              <h2 className="font-bold text-lg text-clr-neutral-500 tracking-wider">
                 Delete Comment
               </h2>
-              <p id="modalDescription">
+              <p>
                 Are you sure you want to delete this comment? This will remove the comment and can't
                 be undone
               </p>
