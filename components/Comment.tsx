@@ -24,7 +24,11 @@ const Comment: React.FC<IComment> = ({
   return (
     <>
       <div className="grid grid-cols-3 rounded-lg my-4 p-4 bg-clr-neutral-100 md:grid-cols-card md:p-8">
-        <HeaderComment currentUser={currentUser} user={user} duration={createdAt} />
+        <HeaderComment
+          currentUser={currentUser}
+          user={user}
+          duration={createdAt}
+        />
         <MainComments
           parentId={parentId}
           isAction={isAction}
@@ -33,7 +37,9 @@ const Comment: React.FC<IComment> = ({
           setIsAction={setIsAction}
           replyingTo={replyingTo}
           content={content}
-          updateComment={(id, text) => updateComment(parent_commentId, id, score, text)}
+          updateComment={(id, text) =>
+            updateComment(parent_commentId, id, score, text)
+          }
         />
         <FooterComments
           currentUser={currentUser}
@@ -45,7 +51,9 @@ const Comment: React.FC<IComment> = ({
           isAction={isAction}
           setIsAction={setIsAction}
           deleteComment={(id) => deleteComment(parent_commentId, id)}
-          updateComment={(id, votes) => updateComment(parent_commentId, id, votes, content)}
+          updateComment={(id, votes) =>
+            updateComment(parent_commentId, id, votes, content)
+          }
           setParentId={setParentId}
         />
       </div>
